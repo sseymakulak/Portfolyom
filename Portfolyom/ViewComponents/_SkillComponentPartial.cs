@@ -2,7 +2,7 @@
 
 namespace Portfolyom.ViewComponents
 {
-    public class _FaetureComponentPartial: ViewComponent
+    public class _SkillComponentPartial: ViewComponent
     {
         public IViewComponentResult Invoke()
         {
