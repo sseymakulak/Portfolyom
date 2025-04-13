@@ -12,7 +12,7 @@ using Portfolyom.DAL.Context;
 namespace Portfolyom.Migrations
 {
     [DbContext(typeof(MyPortfolioContext))]
-    [Migration("20250409135103_mig1")]
+    [Migration("20250413135817_mig1")]
     partial class mig1
     {
         /// <inheritdoc />
@@ -128,8 +128,9 @@ namespace Portfolyom.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Title")
-                        .HasColumnType("int");
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("FeatureId");
 
