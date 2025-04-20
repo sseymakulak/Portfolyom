@@ -2,7 +2,7 @@
 
 namespace Portfolyom.Controllers
 {
-    public class LayoutController1 : Controller
+    public class LayoutController : Controller
     {
         public IActionResult Index()
         {
