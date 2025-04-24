@@ -47,5 +47,21 @@ namespace Portfolyom.Controllers
             context.SaveChanges();
             return RedirectToAction("Index");
         }
+
+        public IActionResult ChangeToDoListStatusToTrue(int id)
+        {
+            var value = context.ToDoLists.Find(id);
+            value.Status = true; 
+            context.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult ChangeToDoListStatusToFalse(int id)
+        {
+            var value = context.ToDoLists.Find(id);
+            value.Status = false;
+            context.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
