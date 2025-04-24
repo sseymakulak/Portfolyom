@@ -1,8 +1,9 @@
 ﻿@model List<ToDoList>
 
 @{
-    ViewData["Title"] = "Index";
-    Layout = "~/Views/Layout/Index.cshtml";
+	ViewData["Title"] = "Index";
+	Layout = "~/Views/Layout/Index.cshtml";
+	int count = 0;
 }
 
 
@@ -33,8 +34,9 @@
 							<tbody>
 								@foreach (var item in Model)
 								{
+									count++;
 									<tr>
-										<td>@item.ToDoListId</td>
+										<td>@count</td>
 										<td>@item.Title</td>
 										<td>@item.Date</td>
 

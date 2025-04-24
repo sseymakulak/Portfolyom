@@ -13,13 +13,14 @@ namespace Portfolyom.Controllers
             return View(values);
         }
         [HttpGet]
-        public IActionResult CreateToDo()
+        public IActionResult CreateToDoList()
         {
             return View();
         }
         [HttpPost]
-        public IActionResult EditToDo(ToDoList toDoList)
+        public IActionResult CreateToDoList(ToDoList toDoList)
         {
+            toDoList.Status =false;
             context.ToDoLists.Add(toDoList);
             context.SaveChanges();
             return RedirectToAction("Index");
@@ -28,6 +29,7 @@ namespace Portfolyom.Controllers
         {
             var value= context.ToDoLists.Find(id);
             context.ToDoLists.Remove(value);
+            context.SaveChanges();
             return RedirectToAction("Index");
         }
 
