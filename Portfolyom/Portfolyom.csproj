@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\portfolyo.png" />
+    <None Include="wwwroot\hola-master\images\portfolyoss.png" />
     <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\.DS_Store" />
   </ItemGroup>
 
