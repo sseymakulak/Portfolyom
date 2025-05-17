@@ -1,5 +1,6 @@
 # Admin Paneli - ASP.NET MVC Projesi
-Bu proje, ASP.NET MVC kullanılarak geliştirilmiş bir **Admin Paneli** uygulamasıdır. 
+Bu proje, ASP.NET MVC kullanılarak geliştirilmiş bir **Portfolyo** 
+uygulamasıdır. 
 
 ## 🖼️ Görseller
 Aşağıda örnek görseller proje arayüzünü göstermektedir:
