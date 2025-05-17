@@ -1,4 +1,4 @@
-# Admin Paneli - ASP.NET MVC Projesi
+# ASP.NET MVC Projesi
 Bu proje, ASP.NET MVC kullanılarak geliştirilmiş bir **Portfolyo** 
 uygulamasıdır. 
 
